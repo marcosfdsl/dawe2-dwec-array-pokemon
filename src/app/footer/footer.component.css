@@ -1,0 +1,23 @@
+.footer {
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.footercen {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+}
+
+a, a:link, a:visited {
+    color: #FFFAFA;
+    text-decoration: none;
+}

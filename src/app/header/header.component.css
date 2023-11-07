@@ -1,0 +1,27 @@
+.headersticky {
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed
+}
+.elementosheader {
+    color: white;
+    font-size: x-large;
+}
+
+.textoheader {
+    margin-left: 24px;
+}
+
+.menu {
+    color: white;
+    font-size: large;
+    margin-right: 16px;
+}
+
+.invisible {
+    visibility: hidden;
+}
