@@ -26,11 +26,12 @@ export class PokemonsComponent {
     if (this.botonPokeball && this.rojoPokeball) {
       this.botonPokeball.addEventListener('mouseenter', () => this.onMouseEnter());
       this.botonPokeball.addEventListener('mouseleave', () => this.onMouseLeave());
-      this.botonPokeball.addEventListener('click', () => this.toggleFotosFilter());
-      this.botonPokeball.addEventListener('click', () => this.toggleNombreVisibility());
+      this.botonPokeball.addEventListener('click', () => {
+        this.toggleFotosFilter();
+        this.toggleNombreVisibility();
+      });
     }
   }
-
   onMouseEnter() {
     if (this.rojoPokeball) {
       this.rojoPokeball.style.opacity = '1';
@@ -65,5 +66,4 @@ export class PokemonsComponent {
       element.style.opacity = element.style.opacity === '1' ? '0' : '1';
     });
   }
-
 }
