@@ -17,7 +17,7 @@ export class PokemonsComponent {
 
   private botonPokeball: HTMLElement | null = null;
   private rojoPokeball: HTMLElement | null = null;
-  private brightnessFilter: boolean = false;
+  private brightnessFilter: boolean = true;
 
   ngAfterViewInit() {
     this.botonPokeball = document.querySelector('.botonpokeball');
@@ -27,6 +27,7 @@ export class PokemonsComponent {
       this.botonPokeball.addEventListener('mouseenter', () => this.onMouseEnter());
       this.botonPokeball.addEventListener('mouseleave', () => this.onMouseLeave());
       this.botonPokeball.addEventListener('click', () => this.toggleFotosFilter());
+      this.botonPokeball.addEventListener('click', () => this.toggleNombreVisibility());
     }
   }
 
@@ -46,16 +47,23 @@ export class PokemonsComponent {
 
   toggleFotosFilter() {
     const fotosElements = document.querySelectorAll('.fotos');
-  
+
     if (fotosElements) {
       fotosElements.forEach((element: Element) => {
         const htmlElement = element as HTMLElement;
         htmlElement.style.filter = this.brightnessFilter ? 'brightness(100%)' : 'brightness(0%)';
       });
-  
+
       this.brightnessFilter = !this.brightnessFilter;
     }
   }
-  
-  
+
+  toggleNombreVisibility() {
+    const fotosElements = Array.from(document.querySelectorAll('.nombrepokemon')) as HTMLElement[];
+
+    fotosElements.forEach((element: HTMLElement) => {
+      element.style.opacity = element.style.opacity === '1' ? '0' : '1';
+    });
+  }
+
 }

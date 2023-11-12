@@ -14,10 +14,15 @@
     display: flex;
     justify-content: center;
     color: white;
-    font-size: medium;
+    font-size: small;
 }
 
 a, a:link, a:visited {
     color: #FFFAFA;
     text-decoration: none;
+}
+
+.icono {
+    color: white;
+    font-size:larger;
 }

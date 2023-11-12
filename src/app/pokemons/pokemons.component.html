@@ -8,7 +8,7 @@
 <div class="divpadre">
     <div class="divpokemons">
         <section class="tarjetapokemon" *ngFor="let pokemon of pokemons" [id]="pokemon.nombre">
-            <h2>{{ pokemon.nombre }}</h2>
+            <h2 class="nombrepokemon">{{ pokemon.nombre }}</h2>
     
             <img class="fotos" [src]="pokemon.foto" alt="{{ pokemon.nombre }}">
     
@@ -17,12 +17,17 @@
             <div class="info">
                 <p class="codigo"># {{ pokemon.codigo }}</p>
                 <b>Tipo</b>
+                <br>
                 <p> {{ pokemon.tipo }}</p>
                 <br>
+                <br>
                 <b>Altura</b>
+                <br>
                 <p> {{ pokemon.altura | number:'1.2-2' }} m</p>
                 <br>
+                <br>
                 <b>Peso</b>
+                <br>
                 <p> {{ pokemon.peso | number:'1.2-2' }} kg</p>
             </div>
         </section>

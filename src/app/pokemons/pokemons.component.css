@@ -1,15 +1,16 @@
-
-.divpokeball{
+.divpokeball {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .botonpokeball {
     background-color: transparent;
     border: 0;
     position: fixed;
     top: 5.9%;
     height: 8%;
+    z-index: 1;
 }
 
 .pokeball {
@@ -44,6 +45,7 @@
     height: 90%;
     overflow: hidden;
 }
+
 .divpokemons {
     display: flex;
     justify-content: space-evenly;
@@ -52,6 +54,7 @@
     margin-top: 3%;
 
 }
+
 .tarjetapokemon {
     color: black;
     background-color: white;
@@ -62,21 +65,30 @@
     padding-top: 24px;
     text-align: center;
 }
+
+.nombrepokemon {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
 .fotos {
     width: 60%;
     margin-top: 24px;
     margin-bottom: 24px;
     filter: brightness(0%);
+    transition: filter 0.8s ease;
+    z-index: 0;
 }
 
 .info {
-    margin-top: 24px;
+    margin-top: 36px;
     height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: medium;
 }
+
 .codigo {
     margin-bottom: 56px;
 }
@@ -98,12 +110,14 @@
         height: max-content;
         overflow: hidden;
     }
+
     .divpokemons {
         flex-direction: column;
         height: 80%;
         margin-top: 20%;
         margin-bottom: 2%;
     }
+
     .tarjetapokemon {
         width: 90%;
         display: flex;
@@ -112,9 +126,11 @@
         margin-top: 24px;
         margin-bottom: 24px;
     }
+
     .fotos {
         width: 40%;
     }
+
     .info {
         margin-top: 0px;
     }
