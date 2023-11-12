@@ -1,3 +1,10 @@
+<div class="divpokeball">
+    <button type="button" id="boton" class="botonpokeball"><img class="pokeball" src="assets/fotos/pokeball.png"></button>
+</div>
+<div class="divpokeball">
+    <i class="rojopokeball"></i>
+</div>
+
 <div class="divpadre">
     <div class="divpokemons">
         <section class="tarjetapokemon" *ngFor="let pokemon of pokemons" [id]="pokemon.nombre">
@@ -13,10 +20,10 @@
                 <p> {{ pokemon.tipo }}</p>
                 <br>
                 <b>Altura</b>
-                <p> {{ pokemon.altura }} m</p>
+                <p> {{ pokemon.altura | number:'1.2-2' }} m</p>
                 <br>
                 <b>Peso</b>
-                <p> {{ pokemon.peso }} kg</p>
+                <p> {{ pokemon.peso | number:'1.2-2' }} kg</p>
             </div>
         </section>
     </div>

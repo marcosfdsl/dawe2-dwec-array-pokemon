@@ -1,27 +1,25 @@
-.headersticky {
+.header {
     height: 10%;
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    position: fixed
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.elementosheader {
-    color: white;
-    font-size: x-large;
-}
-
 .textoheader {
-    margin-left: 24px;
-}
-
-.menu {
+    font-size: x-large;
     color: white;
-    font-size: large;
-    margin-right: 16px;
 }
 
-.invisible {
-    visibility: hidden;
+@media (max-width: 1023px) {
+    .header {
+        height: 15%;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
