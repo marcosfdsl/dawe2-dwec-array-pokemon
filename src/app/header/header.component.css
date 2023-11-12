@@ -8,10 +8,21 @@
     justify-content: center;
     z-index: 1;
 }
-.textoheader {
+.botontitulo {
+    background-color: transparent;
+    border: 0;
+}
+
+.titulo {
     font-size: x-large;
     color: white;
+    transition: color 0.4s;
 }
+
+.titulo:hover {
+    color: rgb(221, 221, 221);
+}
+
 
 @media (max-width: 1023px) {
     .header {

@@ -23,6 +23,13 @@ a, a:link, a:visited {
 }
 
 .icono {
+    margin-left: 6px;
+    margin-right: 6px;
     color: white;
-    font-size:larger;
+    font-size: larger;
+    transition: color 0.4s;
+}
+
+.icono:hover {
+    color: rgb(204, 204, 204);
 }
