@@ -74,7 +74,7 @@
 .fotos {
     width: 60%;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     filter: brightness(0%);
     transition: filter 0.8s ease;
     z-index: 0;
@@ -87,10 +87,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: medium;
-}
-
-.codigo {
-    margin-bottom: 56px;
 }
 
 @media (max-width: 1023px) {
