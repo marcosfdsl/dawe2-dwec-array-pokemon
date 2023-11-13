@@ -17,11 +17,6 @@
     font-size: small;
 }
 
-a, a:link, a:visited {
-    color: #FFFAFA;
-    text-decoration: none;
-}
-
 .icono {
     margin-left: 6px;
     margin-right: 6px;
