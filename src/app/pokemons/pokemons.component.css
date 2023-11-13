@@ -78,6 +78,11 @@
     filter: brightness(0%);
     transition: filter 0.8s ease;
     z-index: 0;
+    transition: transform 1s ease;
+}
+
+.fotos:hover {
+    transform: scale(1.1);
 }
 
 .info {
