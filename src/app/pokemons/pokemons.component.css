@@ -129,6 +129,7 @@
 
     .nombrepokemon {
         width: 30%;
+        font-size: small;
     }
 
     .fotos {
