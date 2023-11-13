@@ -128,7 +128,7 @@
     }
 
     .nombrepokemon {
-        font-size: large;
+        width: 30%;
     }
 
     .fotos {
@@ -137,6 +137,7 @@
 
     .info {
         margin-top: 0px;
+        width: 30%;
     }
 
     .codigo {
